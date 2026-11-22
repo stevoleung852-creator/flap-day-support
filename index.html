@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Flap Day Support</title>
-<meta name="description" content="Help and contact for Flap Day, the split-flap day planner for iPhone, iPad and Apple Watch.">
+<title>Flap Day</title>
+<meta name="description" content="Flap Day shows your calendar as a split-flap departure board on iPhone, iPad and Apple Watch.">
+<meta property="og:title" content="Flap Day">
+<meta property="og:description" content="Your day on a departure board.">
+<meta property="og:image" content="assets/header-poster.jpg">
 <style>
+
 :root {
   --bg: #f4f2ec; --card: #ffffff; --ink: #121418; --muted: #5d6068; --line: #e2dfd6;
   --tile: #fdfcf8; --tile-ink: #121418; --accent: #c85f00; --hinge: rgba(0,0,0,.14);
@@ -43,49 +47,57 @@ a { color: var(--accent); }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 22px 18px; margin: 18px 0; }
 nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
 nav a { margin-right: 18px; }
+
+.hero { background: #04060b; }
+.hero video, .hero img { display: block; width: 100%; max-width: 1920px; margin: 0 auto; aspect-ratio: 3840 / 1646; object-fit: cover; }
+@media (max-width: 700px) { .hero video, .hero img { aspect-ratio: auto; height: 260px; } }
+.intro { text-align: center; padding-top: 40px; }
+.intro h1 { font-size: 44px; margin-top: 0; }
+.soon { display: inline-block; margin-top: 8px; padding: 10px 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--muted); font-weight: 600; font-size: 15px; }
+.features { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+.features li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+.features strong { display: block; margin-bottom: 2px; }
+.features span { color: var(--muted); font-size: 15px; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0; }
+@media (max-width: 700px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+.gallery img { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--line); display: block; }
 </style>
 </head>
 <body>
+<div class="hero">
+  <video autoplay muted loop playsinline poster="assets/header-poster.jpg" aria-label="The Flap Day wordmark flipping between words on a split-flap board">
+    <source src="assets/header-loop.mp4" type="video/mp4">
+    <img src="assets/header-poster.jpg" alt="Flap Day">
+  </video>
+</div>
 <main>
-  <div class="mark" aria-label="Flap Day">
-    <span>F</span><span>L</span><span>A</span><span>P</span><span class="gap"></span><span class="a">D</span><span class="a">A</span><span class="a">Y</span>
+  <section class="intro">
+    <h1>Your day on a departure board.</h1>
+    <p class="lead">Flap Day turns your calendar into a split-flap board. Every event flips into place with a soft click and counts down to what's next, on iPhone, iPad and Apple Watch.</p>
+    <span class="soon">Coming soon to the App Store</span>
+  </section>
+
+  <h2>What it does</h2>
+  <ul class="features">
+    <li><strong>A board for your day</strong><span>Each event's time, place and a countdown to when it starts, in flaps you can hear and feel.</span></li>
+    <li><strong>Works with Apple Calendar</strong><span>Shows the calendars on your iPhone, and events you add appear in Calendar too.</span></li>
+    <li><strong>Widgets and Live Activity</strong><span>Three Home Screen sizes, Lock Screen widgets, and a countdown in the Dynamic Island.</span></li>
+    <li><strong>On Apple Watch</strong><span>Your remaining events on your wrist, plus a watch face complication.</span></li>
+    <li><strong>Light or dark</strong><span>Follows your device, or pick one. Choose the flap speed, sound and haptics.</span></li>
+    <li><strong>Private by design</strong><span>No account, no tracking. Your calendar stays on your devices.</span></li>
+  </ul>
+
+  <h2>A closer look</h2>
+  <div class="gallery">
+    <img src="assets/1-board.jpg" alt="The board showing today's events with countdowns" loading="lazy">
+    <img src="assets/2-apple-calendar.jpg" alt="Adding an event that syncs with Apple Calendar" loading="lazy">
+    <img src="assets/6-widgets.jpg" alt="Flap Day widgets on the Home Screen" loading="lazy">
+    <img src="assets/7-live-activity.jpg" alt="A Live Activity counting down on the Lock Screen" loading="lazy">
+    <img src="assets/5-apple-watch.jpg" alt="Flap Day on three Apple Watches" loading="lazy">
+    <img src="assets/8-light-mode.jpg" alt="The board in light mode" loading="lazy">
   </div>
-  <h1>Flap Day Support</h1>
-  <p class="lead">Your calendar as a split-flap departure board, on iPhone, iPad and Apple Watch.</p>
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Questions, bugs or ideas: <a href="https://github.com/stevoleung852-creator/flap-day-support/issues">open an issue on GitHub</a>. Please include your device and iOS version, and a screenshot if something looks wrong.</p>
-  </div>
-
-  <h2>Getting started</h2>
-  <p>Flap Day opens on a sample day so you can try the board straight away. When you're ready, tap <strong>Use my calendar</strong> at the top of the board, or choose <strong>My calendar</strong> in Settings, and allow calendar access.</p>
-  <p>Flap Day shows the calendars already in Apple's Calendar app, including iCloud, Google and Exchange accounts you've added there. Events you add in Flap Day are saved to the Calendar app too.</p>
-
-  <h2>Common questions</h2>
-
-  <h3>My events don't appear</h3>
-  <p>Check that Flap Day has full calendar access: open the iPhone Settings app, go to <strong>Apps › Flap Day › Calendars</strong> and choose <strong>Full Access</strong>. Then make sure Settings in Flap Day is set to <strong>My calendar</strong>, not the sample day.</p>
-
-  <h3>One calendar is missing from the board</h3>
-  <p>Tapping a coloured circle at the top of the board hides that calendar. Tap it again, or turn it back on under <strong>Calendars on the board</strong> in Settings.</p>
-
-  <h3>The widgets look out of date</h3>
-  <p>Widgets refresh when an event starts or ends, about once an hour, and whenever you leave the app. Opening Flap Day brings them up to date.</p>
-
-  <h3>The Live Activity doesn't show</h3>
-  <p>It appears when your next event today is within four hours. Make sure <strong>Show next event</strong> is on in Flap Day's Settings, and that Live Activities are allowed for Flap Day in the iPhone Settings app. It updates when you open Flap Day.</p>
-
-  <h3>How do I turn off the flap sound?</h3>
-  <p>In Flap Day, open Settings and turn off <strong>Flap sound</strong> or <strong>Haptics</strong>. The sound also follows your iPhone's silent mode. With Reduce Motion on, the flaps don't animate.</p>
-
-  <h3>My Apple Watch shows the sample day</h3>
-  <p>Calendar access on Apple Watch is separate from your iPhone. Open Flap Day on the watch, scroll to the bottom and tap <strong>Use my calendar</strong>. The watch app shows your events but can't add or change them.</p>
-
-  <h3>What do I need?</h3>
-  <p>iPhone or iPad with iOS 18 or iPadOS 18 or later, and for the watch app, Apple Watch with watchOS 11 or later.</p>
-
-  <nav><a href="privacy.html">Privacy Policy</a><span class="muted">© 2026 Stephen Leung</span></nav>
+  <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="mailto:trygymquest@gmail.com">trygymquest@gmail.com</a><span class="muted">© 2026 Stephen Leung</span></nav>
 </main>
 </body>
 </html>

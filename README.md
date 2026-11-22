@@ -1,8 +1,9 @@
-# Flap Day support
+# Flap Day
 
-Support page and privacy policy for Flap Day, the split-flap day planner for iPhone, iPad and Apple Watch.
+Website for Flap Day, the split-flap day planner for iPhone, iPad and Apple Watch.
 
-- Support: https://stevoleung852-creator.github.io/flap-day-support/
+- Home: https://stevoleung852-creator.github.io/flap-day-support/
+- Support: https://stevoleung852-creator.github.io/flap-day-support/support.html
 - Privacy policy: https://stevoleung852-creator.github.io/flap-day-support/privacy.html
 
-Questions or bugs: open an issue in this repository.
+Contact: trygymquest@gmail.com
