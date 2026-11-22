@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flap Day Privacy Policy</title>
+<meta name="description" content="Flap Day does not collect, store or share your personal data.">
+<style>
+:root {
+  --bg: #f4f2ec; --card: #ffffff; --ink: #121418; --muted: #5d6068; --line: #e2dfd6;
+  --tile: #fdfcf8; --tile-ink: #121418; --accent: #c85f00; --hinge: rgba(0,0,0,.14);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #04060b; --card: #10141b; --ink: #f2f3f5; --muted: #9aa0aa; --line: #222833;
+    --tile: #18202c; --tile-ink: #ffffff; --accent: #ffc729; --hinge: rgba(0,0,0,.55);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 72px; }
+.mark { display: flex; gap: 6px; margin-bottom: 10px; }
+.mark span {
+  position: relative; width: 44px; height: 62px; border-radius: 6px; background: var(--tile);
+  color: var(--tile-ink); font: 800 38px/62px -apple-system, BlinkMacSystemFont, "SF Pro Display", Arial, sans-serif;
+  text-align: center; box-shadow: 0 1px 0 var(--line);
+}
+.mark span::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; margin-top: -1px; background: var(--hinge); }
+.mark span.a { color: var(--accent); }
+.mark span.gap { background: transparent; box-shadow: none; width: 16px; }
+.mark span.gap::after { display: none; }
+@media (max-width: 420px) { .mark span { width: 34px; height: 48px; font-size: 29px; line-height: 48px; } }
+h1 { font-size: 34px; line-height: 1.15; margin: 18px 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 22px; margin: 40px 0 10px; letter-spacing: -0.01em; }
+h3 { font-size: 17px; margin: 22px 0 4px; }
+p, li { color: var(--ink); }
+.lead { color: var(--muted); font-size: 19px; margin-top: 0; }
+.muted { color: var(--muted); }
+a { color: var(--accent); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 4px 22px 18px; margin: 18px 0; }
+nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+nav a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-label="Flap Day">
+    <span>F</span><span>L</span><span>A</span><span>P</span><span class="gap"></span><span class="a">D</span><span class="a">A</span><span class="a">Y</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="lead">Effective 23 November 2026</p>
+
+  <div class="card">
+    <h2>The short version</h2>
+    <p>Flap Day does not collect, store or share any of your personal data. Your calendar stays on your devices. There are no accounts, no analytics, no ads and no tracking.</p>
+  </div>
+
+  <h2>Your calendar</h2>
+  <p>If you allow it, Flap Day reads and writes events through Apple's calendar system on your device, so it can show your day on the board and save events you add. This happens entirely on your iPhone, iPad or Apple Watch. Flap Day never sends your events, calendars or any other information to us or to anyone else.</p>
+  <p>You can turn calendar access off at any time in the Settings app under <strong>Apps › Flap Day › Calendars</strong>. Until you allow access, Flap Day shows a made-up sample day.</p>
+
+  <h2>Widgets, Live Activity and Apple Watch</h2>
+  <p>The widgets, the Live Activity and the Apple Watch app read your events on the device they run on, in the same way as the app. Nothing leaves your devices.</p>
+
+  <h2>Your settings</h2>
+  <p>Your preferences, such as appearance, flap speed, sound and which calendars are hidden, are saved on your device only. Deleting Flap Day removes them.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>We don't collect or receive any data about you or how you use the app.</li>
+    <li>We don't use analytics, advertising or tracking, and don't include any third-party SDKs that do.</li>
+    <li>We don't sell or share data, because we don't have any.</li>
+    <li>Flap Day doesn't connect to any server we run.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Flap Day collects no personal data from anyone, including children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="https://github.com/stevoleung852-creator/flap-day-support/issues">open an issue on GitHub</a>.</p>
+
+  <nav><a href="index.html">Support</a><span class="muted">© 2026 Stephen Leung</span></nav>
+</main>
+</body>
+</html>
